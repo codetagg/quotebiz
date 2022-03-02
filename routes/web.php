@@ -31,6 +31,10 @@ Route::name('admin.')->namespace('Admin')->prefix('admin')->group(function () {
 
           Route::get('/login', function () {
             return view('admin.login');
+        });
+
+          Route::get('/register', function () {
+            return view('admin.register');
         }); 
 
            Route::get('/quotes', function () {

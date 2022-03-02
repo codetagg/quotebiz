@@ -26,7 +26,7 @@
                 <div class="nk-content ">
                     <div class="nk-block nk-block-middle nk-auth-body  wide-xs">
                         <div class="brand-logo pb-4 text-center">
-                            <a href="{{url('customer/login')}}" class="logo-link">
+                            <a href="{{url('admin/login')}}" class="logo-link">
                                 <img class="logo-light logo-img logo-img-lg" src="{{asset('/images/logo.png') }}" srcset="{{asset('/images/logo2x.png 2x') }}" alt="logo">
                                 <img class="logo-dark logo-img logo-img-lg" src="{{asset('images/logo-dark.png') }}" srcset="{{asset('/images/logo-dark2x.png 2x') }}" alt="logo-dark">
                             </a>
@@ -41,7 +41,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <form action="{{url('service-provider')}}">
+                                <form action="{{url('admin')}}">
                                     <div class="form-group">
                                         <div class="form-label-group">
                                             <label class="form-label" for="default-01">Email</label>
@@ -67,7 +67,7 @@
                                         <button class="btn btn-lg btn-primary btn-block">Sign in</button>
                                     </div>
                                 </form>
-                                <div class="form-note-s2 text-center pt-4"> New on our platform? <a href="{{ url('service-provider/register')}}">Create an account</a>
+                                <div class="form-note-s2 text-center pt-4"> New on our platform? <a href="{{ url('admin/register')}}">Create an account</a>
                                 </div>
                                 <div class="text-center pt-4 pb-3">
                                     <h6 class="overline-title overline-title-sap"><span>OR</span></h6>
