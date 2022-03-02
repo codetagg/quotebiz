@@ -70,7 +70,7 @@
                                     <div class="form-group">
                                         <div class="custom-control custom-control-xs custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="checkbox">
-                                            <label class="custom-control-label" for="checkbox">I agree to Dashlite <a tabindex="-1" href="#">Privacy Policy</a> &amp; <a tabindex="-1" href="#"> Terms.</a></label>
+                                            <label class="custom-control-label" for="checkbox">I agree to Quotebiz <a tabindex="-1" href="#">Privacy Policy</a> &amp; <a tabindex="-1" href="#"> Terms.</a></label>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -133,7 +133,7 @@
                                     </ul><!-- nav -->
                                 </div>
                                 <div class="mt-3">
-                                    <p>&copy; 2022 DashLite. All Rights Reserved.</p>
+                                    <p>&copy; 2022 Quotebiz. All Rights Reserved.</p>
                                 </div>
                             </div><!-- nk-block -->
                         </div><!-- nk-split-content -->
@@ -143,10 +143,10 @@
                                     <div class="slider-item">
                                         <div class="nk-feature nk-feature-center">
                                             <div class="nk-feature-img">
-                                                <img class="round" src="./images/slides/promo-a.png" srcset="./images/slides/promo-a2x.png 2x" alt="">
+                                                <img class="round" src="{{asset('images/slides/promo-a.png') }}" srcset="{{asset('images/slides/promo-a2x.png 2x') }}" alt="">
                                             </div>
                                             <div class="nk-feature-content py-4 p-sm-5">
-                                                <h4>Dashlite</h4>
+                                                <h4>Quotebiz</h4>
                                                 <p>You can start to create your products easily with its user-friendly design & most completed responsive layout.</p>
                                             </div>
                                         </div>
@@ -154,10 +154,10 @@
                                     <div class="slider-item">
                                         <div class="nk-feature nk-feature-center">
                                             <div class="nk-feature-img">
-                                                <img class="round" src="./images/slides/promo-b.png" srcset="./images/slides/promo-b2x.png 2x" alt="">
+                                                <img class="round" src="{{asset('images/slides/promo-b.png') }}" srcset="{{asset('images/slides/promo-b2x.png 2x') }}" alt="">
                                             </div>
                                             <div class="nk-feature-content py-4 p-sm-5">
-                                                <h4>Dashlite</h4>
+                                                <h4>Quotebiz</h4>
                                                 <p>You can start to create your products easily with its user-friendly design & most completed responsive layout.</p>
                                             </div>
                                         </div>
@@ -165,10 +165,10 @@
                                     <div class="slider-item">
                                         <div class="nk-feature nk-feature-center">
                                             <div class="nk-feature-img">
-                                                <img class="round" src="./images/slides/promo-c.png" srcset="./images/slides/promo-c2x.png 2x" alt="">
+                                                <img class="round" src="{{asset('images/slides/promo-c.png') }}" srcset="{{asset('images/slides/promo-c2x.png 2x') }}" alt="">
                                             </div>
                                             <div class="nk-feature-content py-4 p-sm-5">
-                                                <h4>Dashlite</h4>
+                                                <h4>Quotebiz</h4>
                                                 <p>You can start to create your products easily with its user-friendly design & most completed responsive layout.</p>
                                             </div>
                                         </div>
