@@ -10,7 +10,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>Login | Quotebiz</title>
+    <title>Registration | Quotebiz</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('frontend-assets/assets/css/dashlite.css?ver=2.9.1') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('frontend-assets/assets/css/theme.css?ver=2.9.1') }}">
@@ -24,39 +24,43 @@
             <div class="nk-wrap nk-wrap-nosidebar">
                 <!-- content @s -->
                 <div class="nk-content ">
-                    <div class="nk-block nk-block-middle nk-auth-body  wide-xs">
-                        <div class="brand-logo pb-4 text-center">
-                            <a href="{{url('customer/login')}}" class="logo-link">
-                                <img class="logo-light logo-img logo-img-lg" src="{{asset('/images/logo.png') }}" srcset="{{asset('/images/logo2x.png 2x') }}" alt="logo">
-                                <img class="logo-dark logo-img logo-img-lg" src="{{asset('images/logo-dark.png') }}" srcset="{{asset('/images/logo-dark2x.png 2x') }}" alt="logo-dark">
-                            </a>
-                        </div>
-                        <div class="card">
-                            <div class="card-inner card-inner-lg">
+                    <div class="nk-split nk-split-page nk-split-md">
+                        <div class="nk-split-content nk-block-area nk-block-area-column nk-auth-container bg-white w-lg-45">
+                            <div class="absolute-top-right d-lg-none p-3 p-sm-5">
+                                <a href="#" class="toggle btn btn-white btn-icon btn-light" data-target="athPromo"><em class="icon ni ni-info"></em></a>
+                            </div>
+                            <div class="nk-block nk-block-middle nk-auth-body">
+                                <div class="brand-logo pb-5">
+                                    <a href="{{url('service-provide/register')}}" class="logo-link">
+                                        <img class="logo-light logo-img logo-img-lg" src="{{asset('images/logo.png') }}" srcset="{{asset('images/logo2x.png 2x') }}" alt="logo">
+                                        <img class="logo-dark logo-img logo-img-lg" src="{{asset('images/logo-dark.png') }}" srcset="{{asset('images/logo-dark2x.png 2x') }}" alt="logo-dark">
+                                    </a>
+                                </div>
                                 <div class="nk-block-head">
                                     <div class="nk-block-head-content">
-                                        <h4 class="nk-block-title">Sign-In</h4>
+                                        <h5 class="nk-block-title">Register</h5>
                                         <div class="nk-block-des">
-                                            <p>Access the Quotebiz service provider panel using your email and password.</p>
+                                            <p>Create New Quotebiz Account</p>
                                         </div>
                                     </div>
-                                </div>
-                                <form action="{{url('service-provider')}}">
+                                </div><!-- .nk-block-head -->
+                                <form action="html/pages/auths/auth-success.html">
                                     <div class="form-group">
-                                        <div class="form-label-group">
-                                            <label class="form-label" for="default-01">Email</label>
-                                        </div>
+                                        <label class="form-label" for="name">Name</label>
                                         <div class="form-control-wrap">
-                                            <input type="text" class="form-control form-control-lg" id="default-01" placeholder="Enter your email address or username">
+                                            <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter your name">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="form-label-group">
-                                            <label class="form-label" for="password">Password</label>
-                                            <a class="link link-primary link-sm" href="html/pages/auths/auth-reset-v2.html">Forgot password?</a>
-                                        </div>
+                                        <label class="form-label" for="email">Email</label>
                                         <div class="form-control-wrap">
-                                            <a href="#" class="form-icon form-icon-right passcode-switch lg" data-target="password">
+                                            <input type="text" class="form-control form-control-lg" id="email" placeholder="Enter your email address or username">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="password">Password</label>
+                                        <div class="form-control-wrap">
+                                            <a tabindex="-1" href="#" class="form-icon form-icon-right passcode-switch lg" data-target="password">
                                                 <em class="passcode-icon icon-show icon ni ni-eye"></em>
                                                 <em class="passcode-icon icon-hide icon ni ni-eye-off"></em>
                                             </a>
@@ -64,26 +68,28 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <button class="btn btn-lg btn-primary btn-block">Sign in</button>
+                                        <div class="custom-control custom-control-xs custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkbox">
+                                            <label class="custom-control-label" for="checkbox">I agree to Dashlite <a tabindex="-1" href="#">Privacy Policy</a> &amp; <a tabindex="-1" href="#"> Terms.</a></label>
+                                        </div>
                                     </div>
-                                </form>
-                                <div class="form-note-s2 text-center pt-4"> New on our platform? <a href="{{ url('service-provider/register')}}">Create an account</a>
+                                    <div class="form-group">
+                                        <button class="btn btn-lg btn-primary btn-block">Register</button>
+                                    </div>
+                                </form><!-- form -->
+                                <div class="form-note-s2 pt-4"> Already have an account ? <a href="{{url('service-provider/login')}}"><strong>Sign in instead</strong></a>
                                 </div>
                                 <div class="text-center pt-4 pb-3">
                                     <h6 class="overline-title overline-title-sap"><span>OR</span></h6>
                                 </div>
-                                <ul class="nav justify-center gx-4">
+                                <ul class="nav justify-center gx-8">
                                     <li class="nav-item"><a class="nav-link" href="#">Facebook</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Google</a></li>
                                 </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nk-footer nk-auth-footer-full">
-                        <div class="container wide-lg">
-                            <div class="row g-3">
-                                <div class="col-lg-6 order-lg-last">
-                                    <ul class="nav nav-sm justify-content-center justify-content-lg-end">
+                            </div><!-- .nk-block -->
+                            <div class="nk-block nk-auth-footer">
+                                <div class="nk-block-between">
+                                    <ul class="nav nav-sm">
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Terms & Condition</a>
                                         </li>
@@ -94,7 +100,7 @@
                                             <a class="nav-link" href="#">Help</a>
                                         </li>
                                         <li class="nav-item dropup">
-                                            <a class="dropdown-toggle dropdown-indicator has-indicator nav-link" data-toggle="dropdown" data-offset="0,10"><span>English</span></a>
+                                            <a class="dropdown-toggle dropdown-indicator has-indicator nav-link" data-toggle="dropdown" data-offset="0,10"><small>English</small></a>
                                             <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
                                                 <ul class="language-list">
                                                     <li>
@@ -124,16 +130,55 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                    </ul>
+                                    </ul><!-- nav -->
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="nk-block-content text-center text-lg-left">
-                                        <p class="text-soft">&copy; 2022 DashLite. All Rights Reserved.</p>
-                                    </div>
+                                <div class="mt-3">
+                                    <p>&copy; 2022 DashLite. All Rights Reserved.</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </div><!-- nk-block -->
+                        </div><!-- nk-split-content -->
+                        <div class="nk-split-content nk-split-stretch bg-lighter d-flex toggle-break-lg toggle-slide toggle-slide-right" data-content="athPromo" data-toggle-screen="lg" data-toggle-overlay="true">
+                            <div class="slider-wrap w-100 w-max-550px p-3 p-sm-5 m-auto">
+                                <div class="slider-init" data-slick='{"dots":true, "arrows":false}'>
+                                    <div class="slider-item">
+                                        <div class="nk-feature nk-feature-center">
+                                            <div class="nk-feature-img">
+                                                <img class="round" src="./images/slides/promo-a.png" srcset="./images/slides/promo-a2x.png 2x" alt="">
+                                            </div>
+                                            <div class="nk-feature-content py-4 p-sm-5">
+                                                <h4>Dashlite</h4>
+                                                <p>You can start to create your products easily with its user-friendly design & most completed responsive layout.</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- .slider-item -->
+                                    <div class="slider-item">
+                                        <div class="nk-feature nk-feature-center">
+                                            <div class="nk-feature-img">
+                                                <img class="round" src="./images/slides/promo-b.png" srcset="./images/slides/promo-b2x.png 2x" alt="">
+                                            </div>
+                                            <div class="nk-feature-content py-4 p-sm-5">
+                                                <h4>Dashlite</h4>
+                                                <p>You can start to create your products easily with its user-friendly design & most completed responsive layout.</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- .slider-item -->
+                                    <div class="slider-item">
+                                        <div class="nk-feature nk-feature-center">
+                                            <div class="nk-feature-img">
+                                                <img class="round" src="./images/slides/promo-c.png" srcset="./images/slides/promo-c2x.png 2x" alt="">
+                                            </div>
+                                            <div class="nk-feature-content py-4 p-sm-5">
+                                                <h4>Dashlite</h4>
+                                                <p>You can start to create your products easily with its user-friendly design & most completed responsive layout.</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- .slider-item -->
+                                </div><!-- .slider-init -->
+                                <div class="slider-dots"></div>
+                                <div class="slider-arrows"></div>
+                            </div><!-- .slider-wrap -->
+                        </div><!-- nk-split-content -->
+                    </div><!-- nk-split -->
                 </div>
                 <!-- wrap @e -->
             </div>
@@ -143,8 +188,8 @@
     </div>
     <!-- app-root @e -->
     <!-- JavaScript -->
-    <script src="./assets/js/bundle.js?ver=2.9.1"></script>
-    <script src="./assets/js/scripts.js?ver=2.9.1"></script>
+    <script src="{{ asset('frontend-assets/assets/js/bundle.js?ver=2.9.1') }}"></script>
+    <script src="{{ asset('frontend-assets/assets/js/scripts.js?ver=2.9.1') }}"></script>
     <!-- select region modal -->
     <div class="modal fade" tabindex="-1" role="dialog" id="region">
         <div class="modal-dialog modal-lg" role="document">
@@ -268,5 +313,5 @@
             </div><!-- .modal-content -->
         </div><!-- .modla-dialog -->
     </div><!-- .modal -->
-</body>
+
 </html>

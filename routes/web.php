@@ -97,6 +97,10 @@ Route::name('service-provider.')->namespace('Service-provider')->prefix('service
         Route::get('/login', function () {
             return view('service_provider.login');
         });
+
+        Route::get('/register', function () {
+            return view('service_provider.register');
+        });
         
          Route::get('/quotes', function () {
             return view('service_provider.quotes');
