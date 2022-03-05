@@ -74,32 +74,7 @@
                                                             </div>
                                                         </div><!-- data-item -->
                                                     </div><!-- data-list -->
-                                                    <div class="nk-data data-list">
-                                                        <div class="data-head">
-                                                            <h6 class="overline-title">Preferences</h6>
-                                                        </div>
-                                                        <div class="data-item">
-                                                            <div class="data-col">
-                                                                <span class="data-label">Language</span>
-                                                                <span class="data-value">English (United State)</span>
-                                                            </div>
-                                                            <div class="data-col data-col-end"><a href="#" data-toggle="modal" data-target="#modalLanguage" class="link link-primary">Change Language</a></div>
-                                                        </div><!-- data-item -->
-                                                        <div class="data-item">
-                                                            <div class="data-col">
-                                                                <span class="data-label">Date Format</span>
-                                                                <span class="data-value">M, D, YYYY</span>
-                                                            </div>
-                                                            <div class="data-col data-col-end"><a href="#" data-toggle="modal" data-target="#modalDate" class="link link-primary">Change</a></div>
-                                                        </div><!-- data-item -->
-                                                        <div class="data-item">
-                                                            <div class="data-col">
-                                                                <span class="data-label">Timezone</span>
-                                                                <span class="data-value">Bangladesh (GMT +6:00)</span>
-                                                            </div>
-                                                            <div class="data-col data-col-end"><a href="#" data-toggle="modal" data-target="#modalTimezone" class="link link-primary">Change</a></div>
-                                                        </div><!-- data-item -->
-                                                    </div><!-- data-list -->
+                                                   
                                                 </div><!-- .nk-block -->
                                             </div>
                                             <div class="card-aside card-aside-left user-aside toggle-slide toggle-slide-left toggle-break-lg" data-content="userAside" data-toggle-screen="lg" data-toggle-overlay="true">

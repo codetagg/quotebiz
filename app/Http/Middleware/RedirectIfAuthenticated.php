@@ -27,13 +27,17 @@ class RedirectIfAuthenticated
                 if($guard == 'web'){
                 return redirect(RouteServiceProvider::HOME);
 
-                }elseif($guard == 'tech'){
+                }elseif($guard == 'service-provider'){
 
-                return redirect(RouteServiceProvider::TECH);
+                return redirect(RouteServiceProvider::PROVIDER);
                 }
                 elseif($guard == 'admin'){
 
                 return redirect(RouteServiceProvider::ADMIN);
+                }
+                elseif($guard == 'super-admin'){
+
+                return redirect(RouteServiceProvider::SUPER);
                 }
                 else{
 

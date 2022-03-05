@@ -18,7 +18,70 @@ use App\Http\Controllers\Admin\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//////////////////////////// ADMIN //////////////////////////////////////////
+//////////////////////////// SUPER ADMIN //////////////////////////////////////////
+
+Route::name('super-admin.')->namespace('Super-admin')->prefix('super-admin')->group(function () {
+
+    Route::namespace('Auth')->middleware('guest:super_admin')->group(function () {
+       // Route::match(['get', 'post'], '/login', [AdminController::class, 'adminLogin'])->name('login');
+
+           Route::get('/', function () {
+            return view('super_admin.index');
+        });
+
+          Route::get('/login', function () {
+            return view('super_admin.login');
+        });
+ 
+           Route::get('/admin-list', function () {
+            return view('super_admin.admin');
+        });
+
+
+           Route::get('/serviceprovider-list', function () {
+            return view('super_admin.serviceprovider');
+        });
+
+           Route::get('/customers-list', function () {
+            return view('super_admin.customers');
+        });
+
+           Route::get('/servicecategories', function () {
+            return view('super_admin.servicecategories');
+        });
+
+           Route::get('/settings', function () {
+            return view('super_admin.setting');
+        });
+
+           Route::get('/support', function () {
+            return view('super_admin.support');
+        });
+
+           Route::get('/supportchat', function () {
+            return view('super_admin.supportchat');
+        });
+
+
+    });
+
+    Route::namespace('Auth')->middleware('auth:super_admin')->group(function () {
+
+     
+
+
+        Route::post('/logout', function () {
+            Auth::guard('super-admin')->logout();
+            return redirect()->action([
+                AdminController::class,
+                'adminLogin'
+            ]);
+        })->name('logout');
+
+ }); 
+     });
+
+     //////////////////////////// ADMIN //////////////////////////////////////////
 
 Route::name('admin.')->namespace('Admin')->prefix('admin')->group(function () {
 
@@ -90,7 +153,7 @@ Route::name('admin.')->namespace('Admin')->prefix('admin')->group(function () {
 
 Route::name('service-provider.')->namespace('Service-provider')->prefix('service-provider')->group(function () {
 
-    Route::namespace('Auth')->middleware('guest:tech')->group(function () {
+    Route::namespace('Auth')->middleware('guest:service_provider')->group(function () {
 
         //Route::match(['get', 'post'], '/login', [TechController::class, 'techLogin']);
 
@@ -128,7 +191,7 @@ Route::name('service-provider.')->namespace('Service-provider')->prefix('service
 
     });
 
-    Route::namespace('Auth')->middleware('auth:tech')->group(function () {
+    Route::namespace('Auth')->middleware('auth:service_provider')->group(function () {
 
         
 

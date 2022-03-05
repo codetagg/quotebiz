@@ -17,7 +17,7 @@ class Authenticate extends Middleware
     {
         if (! $request->expectsJson()) {
             // dd(Auth::guard('tech')->user());
-            $this->redirectTo = route('signin');
+            $this->redirectTo = route('customer/login');
             return $this->redirectTo;
         }
     }

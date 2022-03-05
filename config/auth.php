@@ -47,15 +47,22 @@ return [
             'hash' => false,
         ],
 
-        'tech' => [
+        'service_provider' => [
             'driver' => 'session',
-            'provider' => 'techs',
+            'provider' => 'service_providers',
         ],
 
         'admin' => [
             'driver' => 'session',
             'provider' => 'admins',
+        ],
+
+        'super_admin' => [
+            'driver' => 'session',
+            'provider' => 'super_admins',
         ]
+
+
     ],
 
     /*
@@ -81,12 +88,17 @@ return [
             'model' => App\Models\User::class,
         ],
 
-        'techs' => [
+        'service_providers' => [
             'driver' => 'eloquent',
             'model' => App\Models\Tech::class,
         ],
 
         'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin::class,
+        ],
+
+        'super_admins' => [
             'driver' => 'eloquent',
             'model' => App\Models\Admin::class,
         ]
@@ -120,14 +132,20 @@ return [
             'throttle' => 60,
         ],
 
-        'techs' => [
-            'provider' => 'techs',
+        'service_providers' => [
+            'provider' => 'service_providers',
             'table' => 'password_resets',
             'expire' => 60,
         ],
 
         'admins' => [
             'provider' => 'admins',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+
+        'super_admins' => [
+            'provider' => 'super_admins',
             'table' => 'password_resets',
             'expire' => 60,
         ],

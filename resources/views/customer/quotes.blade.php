@@ -10,11 +10,10 @@
                                     <div class="nk-msg-aside">
                                         <div class="nk-msg-nav">
                                             <ul class="nk-msg-menu">
-                                                <li class="nk-msg-menu-item active"><a href="">New</a></li>
-                                                <li class="nk-msg-menu-item"><a href="">Active</a></li>
+                                                <li class="nk-msg-menu-item active"><a href="">Active</a></li>
                                                 <li class="nk-msg-menu-item"><a href="">Won</a></li>
                                                 <li class="nk-msg-menu-item"><a href="">Done</a></li>
-                                                <li class="nk-msg-menu-item"><a href="">Lost</a></li>
+                                                
                                                 <li class="nk-msg-menu-item ml-auto"><a href="" class="search-toggle toggle-search" data-target="search"><em class="icon ni ni-search"></em></a></li>
                                             </ul><!-- .nk-msg-menu -->
                                             <div class="search-wrap" data-search="search">
