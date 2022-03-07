@@ -71,6 +71,14 @@
                                     </a>
                                 
                                 </li><!-- .nk-menu-item -->
+
+                                <li class="nk-menu-item has-sub">
+                                    <a href="{{ url('admin/paymenthistory') }}" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-tranx"></em></span>
+                                        <span class="nk-menu-text">Payment History</span>
+                                    </a>
+                                
+                                </li><!-- .nk-menu-item -->
                                
                                 <li class="nk-menu-item has-sub">
                                 <a href="{{ url('admin/support') }}" class="nk-menu-link">

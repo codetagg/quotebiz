@@ -1,5 +1,5 @@
 @extends('service_provider.layout.app')
-@section('title', 'Settings')
+@section('title', 'Support')
 
 @section('content')
 

@@ -62,6 +62,10 @@ Route::name('super-admin.')->namespace('Super-admin')->prefix('super-admin')->gr
             return view('super_admin.supportchat');
         });
 
+           Route::get('/paymenthistory', function () {
+            return view('super_admin.paymenthistory');
+        });
+
 
     });
 
@@ -132,6 +136,10 @@ Route::name('admin.')->namespace('Admin')->prefix('admin')->group(function () {
             return view('admin.emailtemplate');
         });
 
+           Route::get('/paymenthistory', function () {
+            return view('admin.paymenthistory');
+        });
+
     });
 
     Route::namespace('Auth')->middleware('auth:admin')->group(function () {
@@ -187,6 +195,10 @@ Route::name('service-provider.')->namespace('Service-provider')->prefix('service
 
          Route::get('/createticket', function () {
             return view('service_provider.createticket');
+        });
+
+         Route::get('/payment-history', function () {
+            return view('service_provider.paymenthistory');
         });
 
     });
